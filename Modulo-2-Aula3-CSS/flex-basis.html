@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        .flex-container{
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+            margin: 10px
+        }
+        .item{
+            background-color: coral;
+            color: write;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .basis{
+            flex-basis: auto;
+        }
+        .b-0{
+            flex-basis: 0;
+        }
+        .b-0{
+            flex-basis: 0;
+        }
+        
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .w100{
+            flex-basis: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item basis fg-1">A</div>
+        <div class="item basis fg-1">BBB</div>
+        <div class="item basis fg-1">v</div>
+        <div class="item basis fg-2">dddD</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="item b-0 fg-1">A</div>
+        <div class="item b-0 fg-1">BBB</div>
+        <div class="item b-0 fg-1">v</div>
+        <div class="item b-0 fg-1">dddD</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="item w100 fg-2">A</div>
+        <div class="item w100 fg-2">BBB</div>
+        <div class="item w100 fg-2">v</div>
+        <div class="item w100 fg-2">dddD</div>
+    </div>
+</body>
+</html>

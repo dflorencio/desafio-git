@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: rebeccapurple; 
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex:1;
+        }
+        
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items:  stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        center
+    </h1>
+    <div class="container center ">
+      <div class="item">1</div>
+      <div class="item">Lorem ipsum it</div>
+      <div class="item">item 4 maior de todos</div>
+    </div>
+    
+    <h1>
+        center
+    </h1> 
+    <div class="container center stretch ">
+      <div class="item">1</div>
+      <div class="item">asda sd asasd asd assdadasdasd dasd asd dasda sdasd asd asd asd  asd asd asd asd asdasdasdasdasdas dum dolor sit</div>
+      <div class="item">item 4</div>
+    </div>
+
+    <h1>
+        End
+    </h1> 
+    <div class="container end ">
+      <div class="item">1</div>
+      <div class="item">asda sd asasd asd assdadasdasd dasd asd dasda sdasd asd asd asd  asd asd asd asd asdasdasdasdasdas dum dolor sit</div>
+      <div class="item">item 4</div>
+    </div>
+
+
+
+    <h1>
+        center column
+    </h1>
+    <div class="container center column">
+      <div class="item">1</div>
+      <div class="item">Lorem ipsum it</div>
+      <div class="item">item 4 maior de todos</div>
+    </div>
+    
+    <h1>
+        center
+    </h1> 
+    <div class="container center stretch  column ">
+      <div class="item">1</div>
+      <div class="item">asda sd asasd asd assdadasdasd dasd asd dasda sdasd asd asd asd  asd asd asd asd asdasdasdasdasdas dum dolor sit</div>
+      <div class="item">item 4</div>
+    </div>
+
+    <h1>
+        End
+    </h1> 
+    <div class="container end column ">
+      <div class="item">1</div>
+      <div class="item">asda sd asasd asd assdadasdasd dasd asd dasda sdasd asd asd asd  asd asd asd asd asdasdasdasdasdas dum dolor sit</div>
+      <div class="item">item 4</div>
+    </div>
+</body>
+</html>
